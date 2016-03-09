@@ -93,7 +93,7 @@
     
     
     //下载文件🌰
-    /*
+
      NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
      NSURL *fileUrl = [NSURL fileURLWithPath:cachesPath];
      
@@ -107,7 +107,7 @@
      } fail:^(NSError *error) {
      
      }];
-     */
+
     
 }
 
