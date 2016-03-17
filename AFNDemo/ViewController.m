@@ -66,7 +66,7 @@
     
     
     //上传图片🌰
-    /*
+    
      UIImage *img = [UIImage imageNamed:@"1"];
      
      NSData *data = UIImageJPEGRepresentation(img, 0.5);
@@ -79,21 +79,21 @@
      
      
      };
+    
+    [XYNetworking uploadWithURL:@"upload.php" baseURL:@"http://img.nongji360.com" params:dic fileData:data name:@"Filedata" fileName:@"Filedata.jpg" mimeType:@"image/jpeg" progress:^(NSProgress *progress) {
+        NSLog(@"%lli,%lli",progress.completedUnitCount,progress.totalUnitCount);
+    } success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSLog(@"%@",responseObject);
+    } fail:^(NSURLSessionDataTask *task, NSError *error) {
+        NSLog(@"%@",error);
+    }];
+    
+    
      
-     [XYNetworking upload:@"upload.php" baseURL:@"http://img.nongji360.com" params:dic fileData:data name:@"Filedata" fileName:@"Filedata.jpg" mimeType:@"image/jpeg" progress:^(NSProgress *progress) {
-     NSLog(@"%lli,%lli",progress.completedUnitCount,progress.totalUnitCount);
-     } success:^(NSURLSessionDataTask *task, id responseObject) {
-     NSLog(@"%@",responseObject);
-     } fail:^(NSURLSessionDataTask *task, NSError *error) {
-     NSLog(@"%@",error);
-     
-     }];
-     
-     */
     
     
     //下载文件🌰
-
+/*
      NSString *cachesPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
      NSURL *fileUrl = [NSURL fileURLWithPath:cachesPath];
      
@@ -107,7 +107,8 @@
      } fail:^(NSError *error) {
      
      }];
-
+    */
+    
     
 }
 
